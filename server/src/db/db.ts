@@ -7,6 +7,7 @@ const DB_NAME: string = 'week9';
 let client: MongoClient | null = null;
 let database: Db;
 
+// The tests pass their own uri and database name.
 export const connect = async (
   uri: string = MONGO_URI,
   dbName: string = DB_NAME
